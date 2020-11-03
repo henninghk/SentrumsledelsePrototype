@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/model.js" ></script>
+    <script defer src="js/controller.js"></script> 
+    <script defer src="js/profilesLoader.js" onload="loadCompanies()"></script>
+    <script defer src="js/profilesChanger.js"></script>
+    <script defer src="js/view.js"></script>
+    <script defer src="js/newProfile.js"></script>
+    <link rel="stylesheet" href="noe.css">
+    <title>Overviewpage</title>
+    
+    
+</head>
+<body>
+    <h1 id="header">En Overskrift</h1>
+    <div id="mainContent">
+        <table id="mainTable"></table>
+    </div>
+    
+
+    <button onclick="loadCompanies()">Oversikt</button>
+    <button onclick="changePage('login')">Logg ut</button>
+    
+    
+    <!-- Trenger ny funksjon som lager ny profil og pusher in i profileStorage!--->
+    <button onclick="newProfile()">Lag Ny Profil</button>
+    <!-- <script>
+
+        var chosenWeeks = model.current.weeksToSum;
+
+        document.getElementById("mainContent").innerHTML = `
+        <table id="mainTable">
+            <tr id="staticCells">
+                <th id="butikkNavn">Butikknavn</th>
+                <th id="sisteUker">Gjennomsnittlig inntekt siste ${chosenWeeks} uker</th>
+                <th id="forReg">Forrige registrering</th>
+                <th id="bransje">Bransje</th>
+            </tr>
+        </table>`;
+        
+    </script> -->
+</body>
+</html>

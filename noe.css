@@ -1,0 +1,96 @@
+outer {
+  display: grid;
+  grid-template-columns:
+    [outer-edge] 20px [main-start] 1fr [center] 1fr max-content [main-end];
+  grid-template-areas:
+    "gutter info info photos";
+}
+middle {
+  grid-column: main-start / main-end;
+  display: grid;
+  grid: subgrid / subgrid;
+}
+
+inner {
+  grid-column: center / -1;
+  display: grid;
+  grid: subgrid / subgrid;
+}
+
+tr
+{
+  grid-template-rows: 1fr , 1fr;
+}
+
+table.a th {
+  padding: 10px;
+  margin: 10px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  background-color: rgb(200, 220, 255);
+}
+
+td
+{
+  text-align: center;
+}
+
+
+/* .output {
+    color:black;
+}
+
+overviewGrid {
+}
+
+overviewName {
+
+} */
+
+.overviewGoodPercent {
+    background-color: rgb(212, 88, 88);
+}
+.overviewBadPercent {
+    background-color: rgb(135, 238, 135);
+}
+
+
+/* table tr td th{ padding:20px }
+table td:nth-child(1) { width:20%; }
+table td:nth-child(2) { width:15%; }
+table td:nth-child(3) { width:5%; }
+table td:nth-child(4) { width:35%; }
+table td:nth-child(5) { width:10%; } */
+
+/* <table class="table" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>35%</td>
+    <td>15%</td>
+    <td>5%</td>
+    <td>35%</td>
+    <td>10%</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+    <td>D</td>
+    <td>E</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+    <td>D</td>
+    <td>E</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+    <td>D</td>
+    <td>E</td>
+  </tr>
+</table> */

@@ -1,0 +1,40 @@
+https://prod.liveshare.vsengsaas.visualstudio.com/join?83E75CAC7EC10FCB284CD794B3C319862523
+Call this function onKeyUp event of TEXTBOX.
+
+function myFunction() {
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("TextBoxID");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("TableID");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                var x = $("#TextBoxID").val();
+                var regex = /^[a-zA-Z]+$/;
+                if (!x.match(regex)) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                }
+                if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        <table></table>
+
+        if (item1.attr < item2.attr)
+  return -1;
+if ( item1.attr > item2.attr)
+  return 1;
+return 0;
+
+users.sort((a, b) => a.firstname.localeCompare(b.firstname))
+
+var items = ['réservé', 'premier', 'communiqué', 'café', 'adieu', 'éclair'];
+items.sort((a, b) =>
+   a.localeCompare(b)
+);

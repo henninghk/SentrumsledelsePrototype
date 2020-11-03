@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script defer src="js/model.js"></script>
+        <script defer src="js/controller.js"></script>
+        <script defer src="js/profilesLoader.js"></script>
+        <script defer src="js/profilesChanger.js"></script>
+        <script defer src="js/view.js"></script>
+        <script defer src="js/newProfile.js"></script>
+        <link rel="stylesheet" href="noe.css">
+    </head>
+    <body>
+        <div id="oversikt">
+            <table class="a" id="content"></table>
+        </div>
+
+        <script>
+        //View Funksjon
+        oversiktFunc();
+        loadCompanies();
+        function oversiktFunc()
+            {
+                const chosenWeeks = model.current.weeksToSum;
+                
+                document.getElementById("content").innerHTML +=`
+                <tr>
+                    <th id="butikkNavn">Butikknavn</th>
+                    <th id="sisteUker value=">Gjennomsnittlig inntekt ${chosenWeeks} siste uker</th>
+                    <th id="forReg">Forrige registrering</th>
+                    <th id="bransje">Bransje</th>
+                </tr>`;
+            }
+            
+
+        </script>
+    </body>
+</html>

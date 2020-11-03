@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js/model.js"></script>
+    <script defer src="js/controller.js"></script>
+    <script defer src="js/view.js"></script>
+</head>
+<body>
+    <main id="main-holder"></main>
+        <h1 id="login-header">login</h1>
+
+    <div id="login-error-msg-holder">
+        <p id="login-error-msg">Invalid username<span id="error-msg-second-line">
+            and/or password</span></p>
+        </div>
+
+        <!-- username + password fields -->
+        <!-- replace onclick with submit/action stuff later, maybe use php??? -->
+        <form id="login-form">
+            <input type="text" id="username-field" class="login-form-field" placeholder="username"></br>
+            <input type="password" id="password-field" class="login-form-field" placeholder="password">
+            <input type="button" value="Login" id="loginformSubmit" onclick="passCheck();">
+        </form>
+    </main>
+</body>
+</html>

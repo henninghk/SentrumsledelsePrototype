@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test Suite</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.10.1.css">
+</head>
+
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.10.1.js"></script>
+    <script src="js/model.js"></script>
+    <script>
+        QUnit.test('Test', function(assert) {
+            const loginForm = "Alog";
+const loginButton = "";
+const loginErrorMsg = $("login-error-msg");
+
+loginButton.addEventListener("click", () => { //what is e?
+    preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+    
+    if (username === "user" && password === "pass") {
+        location.reload();
+
+    } else {alert("Feil passord");}
+})
+                assert.equal( );
+            });
+        </script>
+</body>
+
+</html>

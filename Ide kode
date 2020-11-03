@@ -1,0 +1,17 @@
+// Kan legge ting her.
+
+
+// Legger inn bedriftens stats.
+         $("mainTable").innerHTML +=`
+         <div>
+         Navn:${profiles[i].name.value} 
+         Adresse: ${profiles[i].adress.value} 
+         Bransje: ${profiles[i].industry.value}<div>`;
+
+            //Til å legge inn bedrifter i view.
+             while (i <= profiles.length) { //Careful of infinite while loop oops
+     
+       // list business names and corresponding overview info (not the full profile)
+        i++;
+        break; //or continue; if you wanna end the while loop prematurely
+    }
